@@ -1,9 +1,11 @@
-<section class="section pointer" id=portfolio>
-    <div class=container>
+<section class="section pointer" id="portfolio">
+    <div class="container">
         <div class="row justify-content-center txt-bg txt-bg-portfolio">
-            <div class=col-lg-6>
+            <div class="col-lg-6">
                 <div class="wow fadeIn section-title text-center mb-4 pb-2">
-                    <div class="mb-5 pb-3"> <i class="far fa-clone h1 text-muted"></i></div>
+                    <div class="mb-5 pb-3">
+                        <i class="far fa-clone h1 text-muted"></i>
+                    </div>
                     <h2 class="h3 font-weight-bold">My Portfolio</h2>
                     <p class="text-muted mx-auto mb-0 mt-4 para-desc">Sample of some of my projects</p>
                 </div>
@@ -16,21 +18,34 @@
                     <strong>
                         <em>Click To See More Details.</em>
                     </strong>
-                </ng-template><a class="item-box m-2" [placement]="[project['placement']]" [ngbTooltip]="title"
-                    rel="noreferrer" aria-label="project(opens in a new tab)" href="{{project['link']}}"
-                    target="_blank"><img class="item-container img-fluid mx-auto"
+                </ng-template>
+                <!-- Mengganti <a> dengan <div> dan menambahkan (click)="openModal(project)"> -->
+                <div class="item-box m-2" [placement]="[project['placement']]" [ngbTooltip]="title" rel="noreferrer"
+                    aria-label="project(opens in a new tab)" (click)="openModal(project)">
+                    <img class="item-container img-fluid mx-auto"
                         src="assets/images/portfolio/{{project['project']}}.webp"
-                        alt="{{project['project'].replaceAll('-',' ')}}"
-                        title="{{project['project'].replaceAll('-',' ')}}" width="698" height="543" loading="lazy">
-                    <div class=item-mask>
+                        alt="{{project['project'].replaceAll('-', ' ')}}"
+                        title="{{project['project'].replaceAll('-', ' ')}}" width="698" height="543" loading="lazy">
+                    <div class="item-mask">
                         <div class="item-caption text-white text-center">
-                            <h3 class="h5">{{project['project'].replaceAll('-',' ')}}</h3>
+                            <h3 class="h5">{{project['project'].replaceAll('-', ' ')}}</h3>
                             <p>{{project['description']}}</p>
                             <br>
                             <p>My Position as {{project['position']}}</p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Popup -->
+        <div *ngIf="isModalOpen" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-button" (click)="closeModal()">×</span>
+                <h3>{{selectedProject?.project.replaceAll('-', ' ')}}</h3>
+                <p>{{selectedProject?.description}}</p>
+                <p>My Position as {{selectedProject?.position}}</p>
+                <a [href]="selectedProject?.link" target="_blank" class="see-more-button">See More Detail</a>
             </div>
         </div>
     </div>
