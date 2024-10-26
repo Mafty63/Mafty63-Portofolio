@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1729953607109,
+  "timestamp": 1729975538157,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/438.c1de7082f69b1011.js",
+        "/438.2fd393cfd5bad793.js",
         "/705.fa2f847a68798c6c.js",
         "/favicon.ico",
         "/index.html",
         "/main.d5f8f5ca8378d401.js",
         "/polyfills.e3ad3c1e55aac6e7.js",
-        "/runtime.4f24762d97bc4172.js",
-        "/scripts.99d2ef23d3971a73.js",
+        "/runtime.95b809e572127869.js",
+        "/scripts.12af05bf6fda72e4.js",
         "/styles.61b0674320f41b27.css"
       ],
       "patterns": []
@@ -66,6 +66,8 @@
         "/assets/images/about-bg.svg",
         "/assets/images/achievement/Gemastik 2023.webp",
         "/assets/images/achievement/Gemastik 2024.webp",
+        "/assets/images/achievement/Sololearn.webp",
+        "/assets/images/achievement/Udemy.webp",
         "/assets/images/background-image.jpg",
         "/assets/images/bgimg.webp",
         "/assets/images/footer-cloud.svg",
@@ -1299,13 +1301,13 @@
   "dataGroups": [],
   "hashTable": {
     "/404.4ed6dad8c73a710d.webp": "c55234174be110511c6fdf693770c8dde7f046c1",
-    "/438.c1de7082f69b1011.js": "78a61e2bbeb3e115ba37a5607b575655a3b81263",
+    "/438.2fd393cfd5bad793.js": "d8ed56ccc2cfa035e03bab8515af59e5bb5c1667",
     "/705.fa2f847a68798c6c.js": "2c80d4d40ac77292be8b99a1b03396e59bd59a53",
     "/about-bg.fdd18bf629c7ad02.svg": "162427bd64a36e3bcaf05bb446e7d83a610da1e5",
     "/apple-touch-icon.png": "4cf5628349261338c0dfe87ce2dfc9d7d77001a3",
     "/assets/css/animate.min.css": "4ce4e9a3c083a51cc474b62f755108b9c81e5881",
     "/assets/css/font-awesome.min.css": "db3c436a1c87b1fd43a10e820ad628f93df90bce",
-    "/assets/data.min.js": "498d2e23a4e315da790a92d00e751dd83456853d",
+    "/assets/data.min.js": "6728486137c3d7bfe98d52fa3851cfce9c973af6",
     "/assets/fonts/BlackOpsOne.eot": "a922adecfeba3ea43f4e644183728cdd1692dbb4",
     "/assets/fonts/BlackOpsOne.svg": "7c13e5df4822e44cfe78f1291757ef7fc4af6d8a",
     "/assets/fonts/BlackOpsOne.ttf": "024e07e45eefb57d4e55fffc082711c2d653e941",
@@ -1335,6 +1337,8 @@
     "/assets/images/about-bg.svg": "162427bd64a36e3bcaf05bb446e7d83a610da1e5",
     "/assets/images/achievement/Gemastik 2023.webp": "0266cecc5dc73520344c39b9a7d7edcd62405152",
     "/assets/images/achievement/Gemastik 2024.webp": "85d23403f2ee59ce63dbc22c4c5903a9b1c2d3bd",
+    "/assets/images/achievement/Sololearn.webp": "c39105ab9f2ef11ad4d167310867c7628c43c68a",
+    "/assets/images/achievement/Udemy.webp": "87e64b7d8e41b2856f8e71a4aec5b738b9e1d8c2",
     "/assets/images/background-image.jpg": "f7d6bfe04c3ecc9d26801c58ac6e47d3e3a7a125",
     "/assets/images/bgimg.webp": "e5717b46eaf6b39109788059d18ab467a1b99954",
     "/assets/images/footer-cloud.svg": "7c0dfc260fd512c251c2cca84fb08942652e3ad0",
@@ -2561,12 +2565,12 @@
     "/favicon-16x16.png": "e299a25a4a8562d4ab43dd6f30e80d296aefb08f",
     "/favicon-32x32.png": "3b11f0b9e6314aa547fe315587c36cd1be2a7ae8",
     "/favicon.ico": "712f9b219113285de7844f29791b5fe407111a98",
-    "/index.html": "81c005661f01dd8b0dfee22a8b8ca2ac1212e818",
+    "/index.html": "3b8ba2a517338dea3497a8d3e2e66ba72027e7f8",
     "/main.d5f8f5ca8378d401.js": "c30561a8202769682e19d46e363c217cdddfe311",
     "/polyfills.e3ad3c1e55aac6e7.js": "2899c1141ebc8b9fc2e50e21b279e2cff76855f7",
     "/quote-img.5e642c8eee792695.webp": "27936458251d3dbc6d1eecfc1e501ab93a3838bb",
-    "/runtime.4f24762d97bc4172.js": "06e72ba0f582a464d0d4e235e8f305c00b5af336",
-    "/scripts.99d2ef23d3971a73.js": "56e8ea9194f3dcd0af32c1caa195b5102cd6024a",
+    "/runtime.95b809e572127869.js": "317fdc5fecd1e24234bec8fd4f51d8d4bbc8ef35",
+    "/scripts.12af05bf6fda72e4.js": "1042c11165115cf4d719ef469381ac2849543f34",
     "/styles.61b0674320f41b27.css": "a8112361291e8a53e8493502f3dcbe8841480cc4"
   },
   "navigationUrls": [
