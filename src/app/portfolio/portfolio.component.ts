@@ -10,8 +10,8 @@ declare var data: any;
 })
 export class PortfolioComponent implements OnInit {
 	public portfolioData = data['Portfolio'];
-	public isModalOpen = false;  // Untuk kontrol tampilan pop-up
-	public selectedProject: any; // Menyimpan data proyek yang diklik
+	public isModalOpen = false;
+	public selectedProject: any;
 
 	constructor(private changeDetectorRef: ChangeDetectorRef) {
 		changeDetectorRef.detach();
@@ -21,17 +21,19 @@ export class PortfolioComponent implements OnInit {
 		this.changeDetectorRef.detectChanges();
 	}
 
-	// Buka pop-up dan simpan data proyek yang diklik
 	openModal(project: any) {
 		this.selectedProject = project;
 		this.isModalOpen = true;
-		this.changeDetectorRef.detectChanges(); // Deteksi perubahan
+		this.changeDetectorRef.detectChanges();
 	}
 
-	// Tutup pop-up dan reset data proyek
 	closeModal() {
 		this.isModalOpen = false;
 		this.selectedProject = null;
-		this.changeDetectorRef.detectChanges(); // Deteksi perubahan
+		this.changeDetectorRef.detectChanges();
+	}
+
+	get jobsList(): string[] {
+		return this.selectedProject?.jobs ? this.selectedProject.jobs.split(';').map((job: string) => job.trim()) : [];
 	}
 }
