@@ -62,6 +62,127 @@
     top: 25%
 }
 
+/* Background and Section Styling */
+.training-section {
+    background: linear-gradient(10.36deg, rgba(236, 238, 243, 0.52) -7.82%, rgba(248, 248, 249, 0) 70.43%);
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.training-bg {
+    pointer-events: none;
+    background: radial-gradient(41.46% 54.99% at 65.36% 46.44%, #5a5a5a 0%, #25292e 100%);
+    opacity: 0;
+    transition: opacity 1.6s ease-out;
+}
+
+.training-bg-cloud {
+    width: calc(100% + 100px);
+    pointer-events: none;
+    transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease-out;
+}
+
+.width-175 {
+    width: 175px;
+}
+
+/* Sun and Moon Styling */
+.sun {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 30px rgba(253, 205, 40, 0.2);
+    transition: transform 2s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.6s ease-out;
+    z-index: 0;
+}
+
+.sun-circle {
+    background: radial-gradient(76% 76% at 50% 24%, #fae089 0%, #fdcd28 100%);
+    transition: opacity 0.3s ease-out;
+}
+
+.moon {
+    left: 125px;
+    width: 50px;
+    height: 50px;
+}
+
+.moon-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #d1bcf9;
+    transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Night Mode Styling */
+.training-section-night .training-bg {
+    opacity: 1;
+}
+
+.training-section-night .sun-circle {
+    opacity: 0;
+}
+
+.training-section-night .moon-dot {
+    transform: none;
+}
+
+.training-section-night .moon-svg {
+    opacity: 1;
+}
+
+.training-section-night .training-bg-cloud {
+    opacity: 0.07;
+    transform: translateX(-100px);
+}
+
+/* Card Flip Animation */
+.training-flip-box {
+    perspective: 1000px;
+}
+
+.training-front-flip,
+.training-back-flip {
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.training-front-flip {
+    box-shadow: 0 10px 50px rgba(20, 50, 47, 0.03), 0 10px 40px rgba(0, 0, 0, 0.03);
+    height: 250px;
+    border-radius: 5px;
+    border-color: #ff9800;
+    border-style: solid;
+    border-width: thin;
+    background-color: #fff;
+}
+
+.training-back-flip {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    transform: rotateY(180deg);
+    height: 250px;
+    border-radius: 5px;
+    background-color: #ff9800;
+}
+
+.training-flip-box:hover .training-front-flip {
+    transform: rotateY(-180deg);
+}
+
+.training-flip-box:hover .training-back-flip {
+    transform: rotateY(0);
+}
+
+/* Button Styling */
+.certificate-button {
+    background: #fff;
+    color: #ff9800;
+    box-shadow: none;
+}
+
 @media (min-width:200px) and (max-width:768px) {
     .txt-bg-achievement::before {
         font-size: 37px
